@@ -1,85 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap');
 
-
-body{
+.adote{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    background: url("Imagens/lobo-brabo.png") no-repeat right top;
+    color: white;
+    background-position: center;
+    height: 750px;
+
 }
 
-header{
-    background-color: #85CDF5;
+.adote > h2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.in-adote > h2{
+    max-width: 1000px;
+}
+
+.titulo-adote{
+    font-size: 6.5em;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.sobre{
+    background-color: #2C567F;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.titulos{
+    margin: 0px;
+    font-size: 2.5em;
+    padding-top: 50px;
+    color: #DEB959;
     text-align: center;
 }
 
-header > img{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-footer{
+.valores{
     background-color: #333333;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    margin-top: auto;
-}
 
-.links-header{
-    text-decoration-line: none;
-    color: #333333;
-    font-size: 2em;
 }
-
-.map-items{
+.valores2{
+    background-color: #333333;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
-}
-
-.lista{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0px;
-    margin: 0px 0px 0px 40px;
-    max-width: 300px;
-}
-
-.icones{
-    margin-right: 8px;
-}
-
-.patinha{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    max-width: 300px;
 }
 
-.butao{
-    background-color: #DEB959;
-    font-size: 1.3em;
+.valores3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px 50px 30px;
 }
 
-li{
+.valores3 > h2{
+    padding: 40px 0px 40px 0px;
+    margin: 0px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-
+    font-weight: 500;
 }
 
-iframe{
-    border-radius: 20px;
+.conteudo{
+    max-width: 139px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+.paragrafo{
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    line-height: 33px
 }

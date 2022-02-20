@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    min-width: 400px;
+}
+
+header{
+    background-color: #85CDF5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+header > img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: auto;
+    min-width: 300px;
+}
+
+.links-header{
+    text-decoration-line: none;
+    color: #333333;
+    font-size: 2em;
+}
+
+.map-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    margin: 0px 0px 0px 40px;
+    max-width: 300px;
+}
+
+.icones{
+    margin-right: 8px;
+}
+
+.patinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.butao{
+    background-color: #DEB959;
+    font-size: 1.3em;
+}
+
+li{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+iframe{
+    border-radius: 20px;
+}
