@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
@@ -19,6 +20,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 header > img{
@@ -35,6 +37,7 @@ footer{
     align-items: center;
     margin-top: auto;
     min-width: 300px;
+    width: 100%;
 }
 
 .links-header{
