@@ -14,7 +14,6 @@ function getId(anywolf) {
     console.log(wolves)
 }
 
-
 function createPostDiv(wolf){
     const li = document.createElement("li")
    
@@ -60,6 +59,7 @@ function createPostDiv(wolf){
         </a>`*/
 
     listalobinhos.appendChild(li)
+
     console.log(wolf.id)
 }
 
@@ -78,6 +78,7 @@ const getLobinhos = () => {
         console.log(error)
     })
 }
+
 
 getLobinhos()
 
