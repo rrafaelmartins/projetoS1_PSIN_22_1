@@ -7,11 +7,17 @@ const loboshow = document.querySelector(".lobo")
 let wolves = []
 
 
-function getId(anywolf) {
+/*function getId(anywolf) {
     var id = anywolf.id
     wolves.push(id)
     console.log(id)
     console.log(wolves)
+}*/
+
+function getId(clicked_id) {
+    //var id = clicked_id
+    console.log(clicked_id)
+    console.log(id)
 }
 
 
@@ -19,9 +25,12 @@ function createPostDiv(wolf){
     const li = document.createElement("li")
    
     li.className = "li"
+    li.id = wolf.id
+    console.log(wolf)
+    console.log(wolf.id)
     li.innerHTML = ` 
     
-    <a id="${wolf.id}" class="lobitos" href="show-lobinho.html" target="_self" onclick="${getSpecificLobinho(wolf.id)}">
+    <a id="${wolf.id}" class="lobitos" href="show-lobinho.html?lobinho=${wolf.id}" target="_self">
         <img src="${wolf.image_url}">
         <div class="bloco0">
             <div class="bloco1">
@@ -36,12 +45,6 @@ function createPostDiv(wolf){
             <p class="texto">${wolf.description}</p>
         </div>
     </a>`
-    
-    
-    
-    
-    
-    
     
     
     
@@ -62,7 +65,7 @@ function createPostDiv(wolf){
         </a>`*/
 
     listalobinhos.appendChild(li)
-    console.log(wolf.id)
+    //console.log(wolf.id)
 }
 
 
@@ -73,6 +76,7 @@ const getLobinhos = () => {
     .then(response => response.json())
     .then(wolves => {
         wolves.forEach(wolf => {
+            console.log(wolf.id)
             createPostDiv(wolf)
         })
     })

@@ -14,4 +14,7 @@ main > p{
     font-size: 1.2em;
 }
 
+h1, h2, p{
+    color: black
+}
 
