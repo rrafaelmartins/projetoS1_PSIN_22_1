@@ -1,5 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap');
 
+.cima{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.pesquisa-add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.pesquisa{
+    height: 30px;
+    width: 80%;
+    border-radius: 0;
+    border-width: 1px;
+}
+
+.patinhafofa{
+    height: 30px;
+    max-width: 100%;
+}
+
+.lobinhos-adotados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checkbox{
+    height: 20px;
+    width: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 20px;
+    text-align: left;
+}
+
+input{
+    margin: 0px;
+}
+
+button{
+    background-color: #DEB959;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
+    padding: 5px 15px 5px 15px;
+    margin-left: 45px;
+}
+
 .lista-lobinhos li:nth-child(even){
     display: flex;
     flex-direction: row-reverse;
