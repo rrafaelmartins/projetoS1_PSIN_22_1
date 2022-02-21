@@ -62,12 +62,8 @@ function createPostDiv(wolf){
         </a>`*/
 
     listalobinhos.appendChild(li)
-<<<<<<< HEAD
 
     console.log(wolf.id)
-=======
-    //console.log(wolf.id)
->>>>>>> 1dce543d4f75b569815d47a0ce0d0d83e48e1b57
 }
 
 
