@@ -82,7 +82,7 @@ const getSpecificLobinho = (id) => {
     .then(response => response.json())
     .then(wolves => {
         wolves.forEach(wolf => {
-            createPostDiv2(wolf)
+            createPostDiv(wolf)
         })
     })
     .catch((error) => {
