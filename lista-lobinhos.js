@@ -37,7 +37,7 @@ function createPostDiv(wolf){
                     <h1>Nome: ${wolf.name}</h1>
                     <h2>Idade: ${wolf.age} anos</h2>
                 </div>
-                <a href="adotar-lobinho.html">
+                <a href="adotar-lobinho.html?lobinho=${wolf.id}">
                     <input class="adotar" type="button" value="Adotar" target="_self">
                 </a>
             </div>

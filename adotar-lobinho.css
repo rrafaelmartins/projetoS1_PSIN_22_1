@@ -3,6 +3,7 @@
 main{
     width: 100%;    
     max-width: 900px;
+    color: black;
 }
 
 .foto-nome{
@@ -11,21 +12,25 @@ main{
     flex-wrap: wrap;
     align-items: stretch;
     margin-top: 50px;
+    color: black;
 }
 
 .foto-nome img{
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    color: black;
 }
 
 .nome-lobo{
     font-size: 3em;
     margin-bottom: 10px;
+    color: black;
 }
 
 .nome-id{
     padding-left: 70px;
+    color: black;
 }
 
 .nome-idade{
@@ -36,6 +41,7 @@ main{
     align-items: center;
     overflow-x: visible;
     margin-top: 40px;
+    color: black;
 }
 
 .nomein{
@@ -45,6 +51,7 @@ main{
     border-right: #000000;
     border-left: #000000;
     height: 25px;
+    
 }
 
 .adotar{
@@ -53,6 +60,7 @@ main{
     color: white;
     font-size: 1.5em;
     padding: 20px 50px 20px 50px;
+    
 }
 
 .linha{
@@ -74,4 +82,5 @@ main{
 
 h2{
     margin-bottom: 5px;
+    color: black;
 }

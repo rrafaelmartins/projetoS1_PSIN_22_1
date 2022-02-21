@@ -29,7 +29,7 @@ function createPostDiv(wolf){
         <div class="img-button">
             <img class = "imagem" src="${wolf.image_url}" alt="">
             <div class="buttons">
-                <a href="adotar-lobinho.html"><input class = "botao-adotar" type="button" value="ADOTAR"></a>
+                <a href="adotar-lobinho.html?lobinho=${id}"><input class = "botao-adotar" type="button" value="ADOTAR"></a>
                 <input class = "botao-excluir" type="button" value="EXCLUIR" onclick="deletelobin(${id})")>
             </div>
         </div>
