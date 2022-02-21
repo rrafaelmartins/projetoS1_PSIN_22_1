@@ -59,7 +59,33 @@ h1{
 
 }
 
-h1, h2, p{
-    color: black
+.description{
+    height: 100%;
 }
+
+h1{
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: black;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+p{
+    color: black;
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 30px;
+}
+
+a{
+    color: black;
+    list-style: none;
+    text-decoration-line: none;
+}
+
 

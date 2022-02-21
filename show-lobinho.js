@@ -23,20 +23,21 @@ function createPostDiv(wolf){
     li.innerHTML = ` 
     
     <a id="${wolf.id}" class="lobitos" href="show-lobinho.html?lobinho=${id}" target="_self">
-        <img src="${wolf.image_url}">
-        <div class="bloco0">
-            <div class="bloco1">
-                <div>
-                    <h1>Nome: ${wolf.name}</h1>
-                    <h2>Idade: ${wolf.age} anos</h2>
-                </div>
-                <a href="adotar-lobinho.html">
-                    <input class="adotar" type="button" value="Adotar" target="_self">
-                </a>
+    <main class = "lobo">
+    <h1 class = "nome-do-lobo">${wolf.name}</h1>
+    <section class="lobinho">
+        <div class="img-button">
+            <img class = "imagem" src="${wolf.image_url}" alt="">
+            <div class="buttons">
+                <a href="adotar-lobinho.html"><input class = "botao-adotar" type="button" value="ADOTAR"></a>
+                <input class = "botao-excluir" type="button" value="EXCLUIR" onclick="deletelobin(${id})")>
             </div>
-            <p class="texto">${wolf.description}</p>
         </div>
+        <p class = description>${wolf.description}</p>
+    </section>
     </a>`
+
+    
 
     lobo.appendChild(li)
 
@@ -52,6 +53,19 @@ const getSpecificLobinho = (id) => {
     .then(wolf => {
         createPostDiv(wolf)
         console.log(id)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
+
+const deletelobin = (id) => {
+    fetch(url + "/" + id, {
+        method: "DELETE"
+    })
+    .then(() => {
+        alert("Mensagem foi apagada!")
+        console.log(message)
     })
     .catch((error) => {
         console.log(error)
