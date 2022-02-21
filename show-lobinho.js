@@ -64,7 +64,7 @@ const deletelobin = (id) => {
         method: "DELETE"
     })
     .then(() => {
-        alert("Mensagem foi apagada!")
+        alert("Lobinho foi apagado!")
         console.log(message)
     })
     .catch((error) => {
