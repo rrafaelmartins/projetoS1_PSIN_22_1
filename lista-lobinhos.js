@@ -8,19 +8,21 @@ function createPostDiv(wolf){
     li.className = "li"
     li.innerHTML = 
     `
-        <img src="${wolf.image_url}">
-            <div class="bloco0">
-                <div class="bloco1">
-                    <div>
-                        <h1>Nome: ${wolf.name}</h1>
-                        <h2>Idade: ${wolf.age} anos</h2>
+        <a href="show-lobinho.html" target="self">
+            <img src="${wolf.image_url}">
+                <div class="bloco0">
+                    <div class="bloco1">
+                        <div>
+                            <h1>Nome: ${wolf.name}</h1>
+                            <h2>Idade: ${wolf.age} anos</h2>
+                        </div>
+                        <a href="adotar-lobinho.html">
+                            <input class="adotar" type="button" value="Adotar" target="_self">
+                        </a>
                     </div>
-                    <a href="adotar-lobinho.html">
-                        <input class="adotar" type="button" value="Adotar" target="_self">
-                    </a>
+                    <p class="texto">${wolf.description}</p>
                 </div>
-                <p class="texto">${wolf.description}</p>
-            </div>     
+        </a>    
       
     `
 
