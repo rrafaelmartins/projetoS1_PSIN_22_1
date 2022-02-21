@@ -6,29 +6,24 @@ function createPostDiv(wolf){
     const id = wolf.id
 
     li.className = "li"
-    li.innerHTML = `
-
-        <a href="show-lobinho.html" target="_self">
-            <section>
-                <div>
+    li.innerHTML = 
+    `
+        <img src="${wolf.image_url}">
+            <div class="bloco0">
+                <div class="bloco1">
                     <div>
-                        <img src="${wolf.image_url}">
+                        <h1>Nome: ${wolf.name}</h1>
+                        <h2>Idade: ${wolf.age} anos</h2>
                     </div>
-                    <div>
-                        <div>
-                            <h1>Nome: ${wolf.name}</h1>
-                            <h2>Idade: ${wolf.age} anos</h2>
-                            <a href="adotar-lobinho.html">
-                                <input type="button" value="Adotar" target="_self">
-                            </a>
-                        </div>
-                        <div>
-                            <p>${wolf.description}</p>
-                        </div>
-                    </div>
+                    <a href="adotar-lobinho.html">
+                        <input class="adotar" type="button" value="Adotar" target="_self">
+                    </a>
                 </div>
-            </section>
-        </a>`
+                <p class="texto">${wolf.description}</p>
+            </div>     
+      
+    `
+
 
 
     listalobinhos.appendChild(li)
