@@ -2,7 +2,7 @@ const url = "https://lobinhos.herokuapp.com/wolves"
 const listalobinhos = document.querySelector(".lista-lobinhos")
 const loboshow = document.querySelector(".lobo")
 
-const checkbox = document.querySelector(".checkbox")
+var checkbox = document.getElementById("checkbox")
 
 
 
@@ -73,7 +73,7 @@ const getLobinhos = () => {
     .then(response => response.json())
     .then(wolves => {
         wolves.forEach(wolf => {
-            console.log(wolf.id)
+            //console.log(wolf.id)
             createPostDiv(wolf)
         })
     })
@@ -180,7 +180,7 @@ const getAdoptedLobinhos = () => {
     .then(response => response.json())
     .then(wolves => {
         wolves.forEach(wolf => {
-            console.log(wolf.id)
+            //console.log(wolf.id)
             createPostDiv2(wolf)
         })
     })
@@ -197,11 +197,11 @@ getLobinhos()
 getAdoptedLobinhos()
 
 
-checkbox.value = 0
 
-if(checkbox.value = 1){
-    console.log("desligado")
+if(checkbox.checked){
+    console.log("ligado");
+} else{
+    console.log("desligado");
 }
-else if (checkbox.value = 0){
-    console.log("ligado")
-}
+
+//76 e 183
