@@ -69,8 +69,10 @@ function createPostDiv2(wolf){
     li.id = wolf.id
     li.innerHTML = ` 
     
-    
-        <img src="${wolf.image_url}">
+        <div class="imagessss">
+            <div class="imagemfundo"></div>
+            <img src="${wolf.image_url}">
+        </div>
         <div class="bloco0">
             <div class="bloco1">
                 <div>
