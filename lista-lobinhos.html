@@ -25,11 +25,12 @@
                 <a href="adicionar-lobinho.html"><button>+ LOBO</button></a>
             </div>
             <div class="lobinhos-adotados">
-                <input class="checkbox" id="checkbox" type="checkbox" name="" value="on">
+                <input class="checkbox" id="checkbox" type="checkbox" name="" value="on" onclick="if(this.checked){getAdoptedLobinhos()}">
                 <p>Ver lobinhos adotados</p>
             </div>
         </div>
         <ul class = "lista-lobinhos"></ul>
+        <ul class = "lista-lobinhos-adotados"></ul>
     </main>
 
     <footer>
