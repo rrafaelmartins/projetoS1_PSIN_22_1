@@ -71,19 +71,18 @@ button{
     align-items: center;
     justify-content: space-between;  
     color: black;
-    margin: 40px 0px 100px 0px;
+    margin: 40px 170px 100px 0px;
     padding: 0px;
     width: 100%;
     text-align: left;
 }
 
 .lista-lobinhos li img{
-   width: 430px;
-   height: 320px;
-   max-width: 100%;
-   max-height: 100%;
-   margin-left: 50px;
-   margin-right: 50px;
+    width: 400px;
+    height: 351px;
+    margin-left: 49px;
+    position: absolute;
+    margin-top: 44px;
 }
 
 .lista-lobinhos{
@@ -104,19 +103,33 @@ button{
     align-items: center;
     justify-content: space-between;  
     color: black;
-    margin: 40px 0px 100px 0px;
+    margin: 40px 170px 100px 0px;
     padding: 0px;
     width: 100%;
     text-align: left;
 }
 
+.imagessss{
+    display: flex;
+    align-items: center;
+}
 .lista-lobinhos-adotados li img{
-   width: 430px;
-   height: 320px;
-   max-width: 100%;
-   max-height: 100%;
-   margin-left: 50px;
-   margin-right: 50px;
+    width: 400px;
+    height: 351px;
+    margin-left: 49px;
+    position: absolute;
+    margin-top: 44px;
+}
+
+.imagemfundo{
+    background-color: #2C5680;
+    width: 400px;
+    height: 351px;
+    max-height: 100%;
+    bottom: 290px;
+    border-width: medium;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
 }
 
 .lista-lobinhos-adotados{
@@ -151,6 +164,15 @@ button{
     color: white;
     font-size: 1.5em;
     padding: 5px 30px 5px 30px;
+}
+
+.adotar2{
+    background-color: #7AAC3A;
+    ;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px 30px 5px 30px;
 
 }
 
@@ -174,6 +196,7 @@ p{
 }
 
 a{
+    
     color: black;
     list-style: none;
     text-decoration-line: none;
