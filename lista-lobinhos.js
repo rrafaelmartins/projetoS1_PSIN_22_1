@@ -31,7 +31,10 @@ function createPostDiv(wolf){
     li.innerHTML = ` 
     
     <a id="${wolf.id}" class="lobitos" href="show-lobinho.html?lobinho=${wolf.id}" target="_self">
-        <img src="${wolf.image_url}">
+        <div class="imagessss">
+            <img src="${wolf.image_url}">
+            <div class="imagemfundo"></div>
+        </div>
         <div class="bloco0">
             <div class="bloco1">
                 <div>
@@ -97,10 +100,13 @@ function createPostDiv2(wolf){
    
     li.className = "liadotados"
     li.id = wolf.id
-    li.innerHTML = ` 
-    
-    <a id="${wolf.id}" class="lobitos" href="show-lobinho.html?lobinho=${wolf.id}" target="_self">
-        <img src="${wolf.image_url}">
+    li.innerHTML = 
+    ` 
+
+        <div class="imagessss">
+            <img src="${wolf.image_url}">
+            <div class="imagemfundo"></div>
+        </div>
         <div class="bloco0">
             <div class="bloco1">
                 <div>
@@ -108,12 +114,13 @@ function createPostDiv2(wolf){
                     <h2>Idade: ${wolf.age} anos</h2>
                 </div>
                 <a>
-                    <input class="adotar" type="button" value="Adotado" target="_self">
+                    <input class="adotar2" type="button" value="Adotado" target="_self">
                 </a>
             </div>
             <p class="texto">${wolf.description}</p>
+            <p><strong>Adotado por ${wolf.adopter_name}.</p>
         </div>
-    </a>`
+    `
   
     listalobinhos2.appendChild(li)
 
