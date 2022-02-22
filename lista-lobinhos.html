@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fotandhead.css">
     <link rel="stylesheet" href="lista-lobinhos.css">
+    <link rel="stylesheet" href="search.css">
     <title>Lista Lobinhos</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
 
     <main>
         <div class="cima">
-            <div class="pesquisa-add">
+            <div id="pesquisa-add" class="pesquisa-add">
                 <img class="patinhafofa" src="Imagens/patinhafofa.png" alt="Lobinho-Feliz">
-                <input class="pesquisa" type="text">
+                <input id="pesquisa" class="pesquisa" type="text" onkeyup="myFunction()">
                 <a href="adicionar-lobinho.html"><button>+ LOBO</button></a>
             </div>
             <div class="lobinhos-adotados">
@@ -50,5 +51,26 @@
         </div>
     </footer>
     <script src="lista-lobinhos.js"></script>
+    <script>
+        function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('pesquisa-add');
+    filter = input.value;
+    ul = document.getElementsByClassName("ul-lobos");
+    li = ul.getElementsByTagName('ul');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByClassName("a-lobinhos")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+    </script>
 </body>
 </html>

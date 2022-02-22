@@ -2,26 +2,9 @@ const url = "https://lobinhos.herokuapp.com/wolves"
 const listalobinhos = document.querySelector(".lista-lobinhos")
 const listalobinhos2 = document.querySelector(".lista-lobinhos-adotados")
 const loboshow = document.querySelector(".lobo")
+const pesquisa = document.querySelector(".pesquisa-add")
 
 var checkbox = document.getElementById("checkbox")
-
-
-
-let wolves = []
-
-
-/*function getId(anywolf) {
-    var id = anywolf.id
-    wolves.push(id)
-    console.log(id)
-    console.log(wolves)
-}*/
-
-function getId(clicked_id) {
-    //var id = clicked_id
-    console.log(clicked_id)
-    console.log(id)
-}
 
 function createPostDiv(wolf){
     const li = document.createElement("li")
@@ -46,22 +29,6 @@ function createPostDiv(wolf){
         </div>
     </a>`
     
-    
-    
-    /*`
-
-        <a id="${wolf.id}" class="lobitos" href="show-lobinho.html" target="_self" onclick="${getSpecificLobinho(id)}">
-            <section>
-                <div>
-                    <div>
-                        <h1>Nome: ${wolf.name}</h1>
-                        <h2>Idade: ${wolf.age} anos</h2>
-                    </div>
-                    <p class="texto">${wolf.description}</p>
-                </div>
-            </section>
-        </a>`*/
-
     listalobinhos.appendChild(li)
 
 }
@@ -99,7 +66,7 @@ function createPostDiv2(wolf){
     li.id = wolf.id
     li.innerHTML = ` 
     
-    <a id="${wolf.id}" class="lobitos" href="show-lobinho.html?lobinho=${wolf.id}" target="_self">
+    
         <img src="${wolf.image_url}">
         <div class="bloco0">
             <div class="bloco1">
@@ -112,21 +79,11 @@ function createPostDiv2(wolf){
                 </a>
             </div>
             <p class="texto">${wolf.description}</p>
-        </div>
-    </a>`
+        </div>`
   
     listalobinhos2.appendChild(li)
 
 }
-
-
-
-
-
-
-
-
-
 
 
 const getSpecificLobinho = (id) => {
@@ -157,22 +114,6 @@ const getSpecificLobinho = (id) => {
     })
 }*/
 
-/*checkbox.addEventListener("click", (event) => {
-    fetch(url + "/adopted", {
-        method: 'GET',
-    })
-    .then(response => response.json())
-    .then(wolves => {
-        wolves.forEach(wolf => {
-            console.log(wolf.id)
-            createPostDiv(wolf)
-        })
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-})
-*/
 
 const getAdoptedLobinhos = () => {
     fetch(url + "/adopted", {
@@ -190,26 +131,8 @@ const getAdoptedLobinhos = () => {
     })
 }
 
-let adotados = document.getElementsByClassName("liadotados")
-let naoadotados = document.getElementsByClassName("li")
-
-console.log(adotados)
-console.log(naoadotados)
 
 getLobinhos()
-
-/*checkbox.addEventListener("click", (event) => {
-    if(event){
-        [].forEach.call(document.getElementsByClassName('li'), function(el) {
-            el.style.display = "none";
-        })
-    }
-    else if(event){
-        [].forEach.call(document.getElementsByClassName('li'), function(el) {
-            el.style.display = "flex";
-        })
-    }
-})*/
 
 checkbox.addEventListener("click", (event) => {
     if(event){
@@ -219,9 +142,66 @@ checkbox.addEventListener("click", (event) => {
     }
 })
 
+const getLobinhoId = () => {
+    const nomepesquisa = document.querySelector(".pesquisa")
+
+    const body = {
+        wolf : {
+            name: nomepesquisa.value
+        }
+    }
+
+    fetch(url)
+
+}
+
+function createUl (wolf) {
+    const ul = document.createElement("ul")
+   
+    ul.className = "ul-lobos"
+    ul.id = wolf.id
+    ul.innerHTML = 
+    `
+        <li>
+            <a class="a-lobinhos" "href="show-lobinho.html?lobinho=${wolf.id}">${wolf.name}</a>
+        </li>
+    `
+    pesquisa.appendChild(ul)
+}
+
+const getLobinhosForUl = () => {
+    fetch(url, {
+        method: 'GET',
+    })
+    .then(response => response.json())
+    .then(wolves => {
+        wolves.forEach(wolf => {
+            //console.log(wolf.id)
+            createUl(wolf)
+        })
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
 
 
-
-
-
-//76 e 183
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('pesquisa-add');
+    filter = input.value;
+    ul = document.getElementsByClassName("ul-lobos");
+    li = ul.getElementsByTagName('ul');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByClassName("a-lobinhos")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
