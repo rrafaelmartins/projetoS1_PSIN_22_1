@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+
+main{
+    width: 100%;
+}
+.adote{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    background: url("Imagens/lobo-brabo.png") no-repeat right top;
+    color: white;
+    background-position: center;
+    height: 750px;
+
+}
+
+.adote > h2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.in-adote > h2{
+    max-width: 1000px;
+}
+
+.titulo-adote{
+    font-size: 6.5em;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sobre{
+    background-color: #2C567F;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.titulos{
+    margin: 0px;
+    font-size: 2.5em;
+    padding-top: 50px;
+    color: #DEB959;
+    text-align: center;
+}
+
+.valores{
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.valores2{
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.valores3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px 50px 30px;
+}
+
+.valores3 > h2{
+    padding: 40px 0px 40px 0px;
+    margin: 0px;
+    color: white;
+    font-weight: 400;
+}
+
+.conteudo{
+    max-width: 139px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
+
+.paragrafo{
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    line-height: 33px
+}
+
+.lista-lobinhos li:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.lista-lobinhos li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+    color: black;
+    margin: 40px 0px 100px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.lista-lobinhos li img{
+   width: 430px;
+   height: 320px;
+   max-width: 100%;
+   max-height: 100%;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.lista-lobinhos{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.bloco0{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width:100%;
+    width: 500px;
+
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+
+.adotar{
+    background-color: #DEB959;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px 30px 5px 30px;
+
+}
