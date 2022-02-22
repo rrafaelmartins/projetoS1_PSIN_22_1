@@ -38,14 +38,22 @@ function createPostDiv(wolf){
             </div>
             <div class="idade">
                 <h2>Idade:</h2>
+<<<<<<< HEAD
                 <input id="idade" class="linha" type="text">
+=======
+                <input class="linha" type="text">
+>>>>>>> 0e3bc27b13f89b456c151ccb0976acb4987fe7cd
             </div>
         </div>
     
      
         <div class="email">
             <h2>E-mail:</h2>
+<<<<<<< HEAD
             <input id="email" class="linha" type="text">
+=======
+            <input class="linha" type="text">
+>>>>>>> 0e3bc27b13f89b456c151ccb0976acb4987fe7cd
         </div>
    
         <div class="center">
@@ -61,6 +69,10 @@ function createPostDiv(wolf){
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e3bc27b13f89b456c151ccb0976acb4987fe7cd
 const getSpecificLobinho = (id) => {
     fetch(url + '/' + id, {
         method: 'GET',
@@ -75,6 +87,7 @@ const getSpecificLobinho = (id) => {
     })
 }
 
+<<<<<<< HEAD
 
 
 
@@ -90,6 +103,12 @@ const updatelobin = (id) => {
             adopter_name: nomein.value,
 		    adopter_age: idade.value,
 		    adopter_email: email.value,
+=======
+const updatelobin = (id) => {
+    var editInput = document.getElementById(`${id}`)
+    const body = {
+        wolves: {
+>>>>>>> 0e3bc27b13f89b456c151ccb0976acb4987fe7cd
             adopted: "true"
         }
     }
@@ -102,8 +121,14 @@ const updatelobin = (id) => {
         }
     })
     .then((response) => response.json())
+<<<<<<< HEAD
     .then(() => {
         alert("Lobo foi adotado!")
+=======
+    .then((wolves) => {
+        alert("Mensagem foi editada!")
+        console.log(wolves)
+>>>>>>> 0e3bc27b13f89b456c151ccb0976acb4987fe7cd
     })
     .catch((error) => {
         console.error(error)
